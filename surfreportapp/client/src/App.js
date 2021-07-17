@@ -1,9 +1,9 @@
 import logo from './logo.svg';
 import './App.css';
-import Home from './components/Home';
+import Home from './views/Home';
 import Header from './components/Header';
-import Dashboard from './components/Dashboard';
-import Articles from './components/Articles';
+import Dashboard from './views/Dashboard';
+import Articles from './views/Articles';
 import {Router} from '@reach/router';
 
 

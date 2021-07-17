@@ -1,9 +1,33 @@
 const mongoose = require('mongoose');
 
-const YourSchema = new mongoose.Schema({
+const ArticleSchema = new mongoose.Schema({
+    articleName:{
+        type: String,
+        required: [true, "Please enter a name for the article"]
+    },
+    link:{
+        type: String,
+        required: [true, "Please enter a link for the article"]
+    }
+}, {timestamps: true})
+
+const SpotSchema = new mongoose.Schema({
     // go buck wild with your schema
+    spotName:{
+        type: String,
+        required: [true, "Please enter spot name"]
+    },
+    spotLongitude:{
+        type: Number,
+        required: [true, "Please enter the spots longitude"]
+    },
+    spotLatitude:{
+        type: Number,
+        required: [true, "Please enter spots latitude"]
+    }
 }, { timestamps: true });
 
-const Your = mongoose.model("Your", YourSchema);
+const Article = mongoose.model("Article", ArticleSchema);
+const Spot = mongoose.model("Spot", SpotSchema);
 
-module.exports = Your;
+module.exports = Spot, Article;
