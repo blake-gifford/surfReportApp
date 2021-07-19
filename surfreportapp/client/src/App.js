@@ -5,6 +5,10 @@ import Header from './components/Header';
 import Dashboard from './views/Dashboard';
 import Articles from './views/Articles';
 import {Router} from '@reach/router';
+import NewSpot from './views/NewSpot';
+// import articleForm from './components/ArticleForm';
+import NewArticle from './views/NewArticle';
+
 
 
 function App() {
@@ -15,6 +19,8 @@ function App() {
         <Dashboard path="/" />
         <Home path="/home" />
         <Articles path="/articles" />
+        <NewSpot path="/spot/new" />
+        <NewArticle path="/article/new" />
       </Router>
     </div>
   );

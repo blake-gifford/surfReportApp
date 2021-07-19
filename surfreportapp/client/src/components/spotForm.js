@@ -1,8 +1,9 @@
 import React,{ useState, useEffect } from 'react'
+import { navigate } from '@reach/router';
 
-const spotForm = props => {
+const SpotForm = props => {
 
-    const { submitHandler, changeHandler, spot, errors } = props;
+    const { submitHandler, changeHandler, spot, errors, action } = props;
 
     return (
         <div>
@@ -34,9 +35,13 @@ const spotForm = props => {
                     <label htmlFor="spotLatitude">Spot Latitude:</label>
                     <input type="number" name="spotLatitude" onChange={changeHandler} />
                 </p>
+                <p>
+                    <input type="button" className="col-sm-1" value="Cancel" onClick={ () => navigate('/') } />
+                    <input type="submit" className="col-sm-1" value={action} onClick={ () => navigate('/') }/>
+                </p>
             </form>
         </div>
     )
 }
 
-export default spotForm
+export default SpotForm

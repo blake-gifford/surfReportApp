@@ -1,28 +1,30 @@
 import React, { useState } from 'react';
-import SpotForm from '../components/SpotForm';
+import ArticleForm from '../components/ArticleForm';
 import axios from 'axios'
 import { navigate } from '@reach/router'
 
 const initialErrors = {
-    spotName: '',
-    spotLongitude: '',
-    spotLatitude: ''
+    articleName: '',
+    link: ''
 }
 
-const initialSpot = {
-    spotName: '',
-    spotLongitude: '',
-    spotLatitude: ''
+const initialArticle = {
+    articleName: '',
+    link: ''
 }
 
-const NewSpot = props => {
-    const [spot, setSpot] = useState(initialSpot)
+const NewArticle = props => {
+    const [article, setArticle] = useState(initialArticle)
     const [errors, setErrors] = useState(initialErrors)
+
+
+
+    // http://localhost:8000/api/create/article
 
     const changeHandler = e => {
         const { name, value } = e.target;
-        setSpot({
-            ...spot,
+        setArticle({
+            ...article,
             [name]:value
         })
     }
@@ -30,7 +32,7 @@ const NewSpot = props => {
     const submitHandler = e => {
         e.preventDefault();
         // useEffect(() => {
-            axios.post('http://localhost:8000/api/create/spot', spot)
+            axios.post('http://localhost:8000/api/create/article', article)
             .then(response => {
                 const{message, results} = response.data;
                 if(message === "success"){
@@ -45,13 +47,11 @@ const NewSpot = props => {
             })
         // }, [])
     }
-    
 
     return (
         <div>
-            <SpotForm 
-                spot={spot}
-                errors={errors}
+            <ArticleForm 
+                article={article}
                 errors={errors}
                 submitHandler={submitHandler}
                 changeHandler={changeHandler}
@@ -61,4 +61,4 @@ const NewSpot = props => {
     )
 }
 
-export default NewSpot
+export default NewArticle

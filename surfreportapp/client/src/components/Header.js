@@ -17,6 +17,12 @@ const Header = () => {
                         <li class="nav-item">
                         <a class="nav-link" href="/articles">Articles</a>
                         </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/spot/new">Create New Surf Spot</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="/article/new">Create New Surf Article</a>
+                        </li>
                         {/* <li class="nav-item">
                         <a class="nav-link" href="#">Pricing</a>
                         </li>
