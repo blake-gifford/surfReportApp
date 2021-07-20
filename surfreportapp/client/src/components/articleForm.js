@@ -6,6 +6,7 @@ const ArticleForm = props => {
 
     return (
         <div>
+            <h2>Create New Article!</h2>
             <form onSubmit={ submitHandler }>
                 <p>
                     {errors.articleName ?
@@ -26,8 +27,8 @@ const ArticleForm = props => {
                     <input type="text" name="link" onChange={changeHandler} />
                 </p>
                 <p>
-                    <input type="button" className="col-sm-1" value="Cancel" onClick={ () => navigate('/') } />
-                    <input type="submit" className="col-sm-1" value={action} onClick={ () => navigate('/') }/>
+                    <input type="button" className="col-sm-2" value="Cancel" onClick={ () => navigate('/') } />
+                    <input type="submit" className="col-sm-2" value={action} onClick={ () => navigate('/') }/>
                 </p>
             </form>
         </div>

@@ -31,7 +31,7 @@ const NewSpot = props => {
         e.preventDefault();
         // useEffect(() => {
             axios.post('http://localhost:8000/api/create/spot', spot)
-            .then(response => {
+                .then(response => {
                 const{message, results} = response.data;
                 if(message === "success"){
                     navigate('/')
@@ -48,7 +48,8 @@ const NewSpot = props => {
     
 
     return (
-        <div>
+        <div className="form_card center_page background">
+            <h2>Create New Surf Spot!</h2>
             <SpotForm 
                 spot={spot}
                 errors={errors}

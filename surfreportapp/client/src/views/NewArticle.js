@@ -13,7 +13,7 @@ const initialArticle = {
     link: ''
 }
 
-const NewArticle = props => {
+const NewArticle = props => {  
     const [article, setArticle] = useState(initialArticle)
     const [errors, setErrors] = useState(initialErrors)
 
@@ -49,7 +49,7 @@ const NewArticle = props => {
     }
 
     return (
-        <div>
+        <div className="form_card center_page background">
             <ArticleForm 
                 article={article}
                 errors={errors}

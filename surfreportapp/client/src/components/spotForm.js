@@ -36,8 +36,8 @@ const SpotForm = props => {
                     <input type="number" name="spotLatitude" onChange={changeHandler} />
                 </p>
                 <p>
-                    <input type="button" className="col-sm-1" value="Cancel" onClick={ () => navigate('/') } />
-                    <input type="submit" className="col-sm-1" value={action} onClick={ () => navigate('/') }/>
+                    <input type="button" className="col-sm-2" value="Cancel" onClick={ () => navigate('/') } />
+                    <input type="submit" className="col-sm-2" value={action} onClick={ () => navigate('/') }/>
                 </p>
             </form>
         </div>
