@@ -45,7 +45,6 @@ const NewSpot = props => {
             })
         // }, [])
     }
-    
 
     return (
         <div className="form_card center_page background">
