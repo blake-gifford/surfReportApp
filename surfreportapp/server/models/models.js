@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-var Double = require("mongodb").Double;
+require('mongoose-double')(mongoose);
 
 const ArticleSchema = new mongoose.Schema({
     articleName:{

@@ -24,7 +24,7 @@ const SpotForm = props => {
                         ""
                     }
                     <label htmlFor="spotLongitude">Spot Longitude:</label>
-                    <input type="number" name="spotLongitude" onChange={changeHandler} />
+                    <input type="number" step="any" name="spotLongitude" onChange={changeHandler} />
                 </p>
                 <p>
                     {errors.spotLatitude ?
@@ -33,7 +33,7 @@ const SpotForm = props => {
                         ""
                     }
                     <label htmlFor="spotLatitude">Spot Latitude:</label>
-                    <input type="number" name="spotLatitude" onChange={changeHandler} />
+                    <input type="number" step="any" name="spotLatitude" onChange={changeHandler} />
                 </p>
                 <p>
                     <input type="button" className="col-sm-2" value="Cancel" />
