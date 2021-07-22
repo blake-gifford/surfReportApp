@@ -1,5 +1,7 @@
 import React,{ useState, useEffect } from 'react'
 import { navigate } from '@reach/router';
+import '../App.css';
+
 
 const SpotForm = props => {
 

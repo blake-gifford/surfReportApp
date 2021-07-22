@@ -37,25 +37,39 @@
   }
 }
 
-div{
+/* div{
   margin: auto;
-}
+} */
 .form_card{
   height: 300px;
   width: 500px;
-  background-color:rgb(84, 165, 231);
+  background-color: white;
   border-radius: 10px;
   vertical-align: auto;
   padding: 40px 0px;
+  /* opacity: .99;
+  box-shadow: 8px 8px; */
 }
+
 .center_page{
-  margin: 10% auto;
+  margin: auto;
 }
+
 .background{
-  background-image: url('https://images.unsplash.com/photo-1484291470158-b8f8d608850d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60');
-  background-repeat: no-repeat;
-  opacity: .8;
+  /* background-image: url('https://images.unsplash.com/photo-1484291470158-b8f8d608850d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60'); */
+  /* background-image: url(https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60); */
+  /* other option for a background weather its for the form or page */
+  /* https://images.unsplash.com/photo-1559825481-12a05cc00344?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60 */
+  /* background-repeat: no-repeat; */
+  opacity: .65;
+  box-shadow: 5px 5px 5px;
 }
-.dashboard_card{
-  
+
+.page_background{
+  background-image: url('https://images.pexels.com/photos/1680140/pexels-photo-1680140.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+  background-repeat: no-repeat;
+  background-size:cover;
+  /* height: 100%; */
+  /* min-height: 1200px;
+  min-width: 1500px; */
 }

@@ -49,14 +49,16 @@ const NewArticle = props => {
     }
 
     return (
-        <div className="form_card center_page background">
-            <ArticleForm 
-                article={article}
-                errors={errors}
-                submitHandler={submitHandler}
-                changeHandler={changeHandler}
-                action="Submit"
-            />
+        <div className="page_background">
+            <div className="form_card center_page background ">
+                <ArticleForm 
+                    article={article}
+                    errors={errors}
+                    submitHandler={submitHandler}
+                    changeHandler={changeHandler}
+                    action="Submit"
+                />
+            </div>
         </div>
     )
 }

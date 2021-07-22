@@ -1,5 +1,6 @@
 import React,{ useState, useEffect } from 'react'
 import { navigate } from '@reach/router';
+import '../App.css';
 
 const ArticleForm = props => {
     const { submitHandler, changeHandler, article, errors, action } = props;

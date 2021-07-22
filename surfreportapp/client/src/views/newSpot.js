@@ -47,16 +47,18 @@ const NewSpot = props => {
     }
 
     return (
-        <div className="form_card center_page background">
-            <h2>Create New Surf Spot!</h2>
-            <SpotForm 
-                spot={spot}
-                errors={errors}
-                errors={errors}
-                submitHandler={submitHandler}
-                changeHandler={changeHandler}
-                action="Submit"
-            />
+        <div className="page_background">
+            <div className="form_card center_page background">
+                <h2>Create New Surf Spot!</h2>
+                <SpotForm 
+                    spot={spot}
+                    errors={errors}
+                    errors={errors}
+                    submitHandler={submitHandler}
+                    changeHandler={changeHandler}
+                    action="Submit"
+                />
+            </div>
         </div>
     )
 }
