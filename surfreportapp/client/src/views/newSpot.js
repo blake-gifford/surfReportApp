@@ -48,7 +48,7 @@ const NewSpot = props => {
 
     return (
         <div className="page_background">
-            <div className="form_card center_page background">
+            <div className="center_page background">
                 <h2>Create New Surf Spot!</h2>
                 <SpotForm 
                     spot={spot}

@@ -16,10 +16,10 @@ const Dashboard = props => {
     const [article, setArticle] = useState([]);
 
     useEffect(() => {
-        // axios.get('http://localhost:8000/api/articles')
-        //     .then(response=> setArticle(response.data.results))
-        //     // console.log(response.data.results)
-        //     .catch(err => console.log(err))
+        axios.get('http://localhost:8000/api/articles')
+            .then(response=> setArticle(response.data.results))
+            .catch(err => console.log(err))
+            // console.log(response.data.results)
         axios.get('http://localhost:8000/api/spots')
             .then(response=> setSpot(response.data.results))
             .catch(err => console.log(err))
@@ -43,6 +43,23 @@ const Dashboard = props => {
                         </div>
                     </div>
                 </div>
+            )
+            }
+            {
+            article.map((article, i) =>
+                <div key={i}>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">{article.articleName}</h5>
+                            <p class="card-text">Check out This Surf Article</p>
+                            <a href="{article.link}" class="btn btn-primary">Read!</a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             )
             }
         </div>

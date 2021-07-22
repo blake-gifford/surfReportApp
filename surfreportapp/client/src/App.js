@@ -17,7 +17,6 @@ function App() {
       <Header></Header>
       <Router>
         <Dashboard path="/" />
-        <Home path="/home" />
         <Articles path="/articles" />
         <NewSpot path="/spot/new" />
         <NewArticle path="/article/new" />

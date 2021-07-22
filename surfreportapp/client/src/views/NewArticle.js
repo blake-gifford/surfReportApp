@@ -50,7 +50,7 @@ const NewArticle = props => {
 
     return (
         <div className="page_background">
-            <div className="form_card center_page background ">
+            <div className="center_page background">
                 <ArticleForm 
                     article={article}
                     errors={errors}

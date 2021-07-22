@@ -28,8 +28,8 @@ const ArticleForm = props => {
                     <input type="text" name="link" onChange={changeHandler} />
                 </p>
                 <p>
-                    <input type="button" className="col-sm-2" value="Cancel" onClick={ () => navigate('/') } />
-                    <input type="submit" className="col-sm-2" value={action} onClick={ () => navigate('/') }/>
+                    <input type="button" className="col-sm-2" value="Cancel" />
+                    <input type="submit" className="col-sm-2" value={action}/>
                 </p>
             </form>
         </div>
