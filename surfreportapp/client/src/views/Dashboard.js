@@ -27,7 +27,7 @@ const Dashboard = props => {
     }, [])
 
     return (
-        <div>
+        <div className="App">
             {
             spot.map((spot, i) =>
                 <div key={i}>
